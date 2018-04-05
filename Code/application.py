@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from matplotlib import animation
-from modele_ac import *
+from ac import *
 
 class Visu(object):
     def __init__(self,tail=(40,40)):
