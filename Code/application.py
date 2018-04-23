@@ -18,7 +18,7 @@ class Appli(Visu):
         Visu.__init__(self,tail=(40,40))
         self.ac = ac
         self.enCours = True
-        self.ani = animation.FuncAnimation(self.fig, self.miseAjour, interval=50)
+        self.ani = animation.FuncAnimation(self.fig, self.miseAjour, interval=500)
         self.im = self.ax.imshow(ac.conf)
         self.fig.canvas.mpl_connect('key_press_event', self.onPress)
         plt.show()
@@ -38,8 +38,9 @@ class Appli(Visu):
 
 
 if '__main__'==__name__:
-    ac = GreenbergHastings(80)
-    Appli(ac)
+    #ac = GreenbergHastings(80)
+    #Appli(ac)
 
     
-    
+    ag = CycleACGH(80, 8, 3, 5)
+    Appli(ag)

@@ -95,12 +95,14 @@ if '__main__'==__name__:
     #    grh.etape()
     #    print(grh)    
     
+    
+    """ generalisation """
     acgh = CycleACGH(7, 8, 3, 5)
     print(acgh)
     acgh.calculPred()
     #print(acgh.voisins(0,0))
     #acgh.transition(0,0)
     #print(acgh)
-    #first trans
-    acgh.etape()
-    print(acgh)
+    for step in range(5):
+        acgh.etape()
+        print(acgh)
