@@ -41,6 +41,6 @@ if '__main__'==__name__:
     #ac = GreenbergHastings(80)
     #Appli(ac)
 
-    
+    # taille, etat, rayon, seuil
     ag = CycleACGH(80, 8, 3, 5)
     Appli(ag)
