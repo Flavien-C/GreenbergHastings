@@ -47,98 +47,70 @@
     \section{Premières évolutions de l'automate de Greenberg-Hastings}
         Sur le premier modèle de Greenberg-Hasting avec un automate cellulaire à trois états et d'une taille 80$\times$80 cases, l'évolution de cet automate ressemble aux figures suivantes:
         \begin{center}
-            \begin{figure}[!h]
-                \centering
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/step1.png}
-                    \caption{Étape 1}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/step2.png}
-                    \caption{Étape 2}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/step3.png}
-                    \caption{Étape 3}
-                \end{minipage}
-            \end{figure}
-            % 2nd line
-            \begin{figure}[!h]
-                \centering
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/step4.png}
-                    \caption{Étape 4}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/step5.png}
-                    \caption{Étape 5}
-                \end{minipage}
-            \end{figure}
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part1/step1.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part1/step2.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part1/step3.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part1/step4.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part1/step5.png}
+            \end{minipage}
         \end{center}
     
     
     \section{Phénomènes d'émergences sur un automate donné}
-        \textbf{FAIRE LES IMAGES !!!\\}
         On utilise maintenant un modèle généraliste de Greenberg-Hastings. On utilise comme paramètres huit états possibles par cellules, un rayon de 3 cases, un seuil de 5 et une taille de 80$\times$80.
         \begin{center}
-            \begin{figure}[!h]
-                \centering
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 1}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 2}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 3}
-                \end{minipage}
-            \end{figure}
-            % 2nd line
-            \begin{figure}[!h]
-                \centering
-                $\rightarrow$
-                \begin{minipage}{.29\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 4}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 5}
-                \end{minipage}
-                $\rightarrow$
-                \begin{minipage}{.3\linewidth}
-                    \centering
-                    \includegraphics[scale=0.2]{img/logo.png}
-                    \caption{Étape 6}
-                \end{minipage}
-            \end{figure}
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step1.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step2.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step3.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step4.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step5.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step6.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step7.png}
+            \end{minipage}
+            $\rightarrow$
+            \begin{minipage}{.17\linewidth}
+                \includegraphics[scale=0.15]{img/part2/step8.png}
+            \end{minipage}
+            ...
         \end{center}
-        On remarque que l'automate subit d'abord une phase d'évolution chaotique, puis se stabilise pour répéter le même cycle d'évolution à l'infini.
+        On remarque que l'automate subit d'abord une phase d'évolution chaotique, puis se stabilise pour répéter le cycle d'évolution de la seconde ligne à l'infini.
     
     
     \section{Proposition d'automates créant des phénomènes d'émergeances}
-        \textbf{En faisant varier les paramètres nbEtats , rayon , seuil et tail , proposer d'autres automates dont la dynamique présente également des phénomènes d'émergence.\\
-        Faire des test\\
-        Afficher les images avec les parametres}
+        \textbf{En faisant varier les paramètres nbEtats, rayon, seuil et tail, proposer d'autres automates dont la dynamique présente également des phénomènes d'émergence.\\
+        \Huge{Faire des test\\
+        Afficher les images avec les parametres\\}}
     
 \end{document}

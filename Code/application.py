@@ -42,5 +42,6 @@ if '__main__'==__name__:
     #Appli(ac)
 
     # taille, etat, rayon, seuil
+    # Obligatoire: 80, 8, 3, 5
     ag = CycleACGH(80, 8, 3, 5)
     Appli(ag)
