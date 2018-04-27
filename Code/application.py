@@ -43,5 +43,7 @@ if '__main__'==__name__:
 
     # taille, etat, rayon, seuil
     # Obligatoire: 80, 8, 3, 5
-    ag = CycleACGH(80, 8, 3, 5)
+    # "Vide": 80, 10, 4, 8
+    # "Multi-cellule": 500, 8, 4, 8
+    ag = CycleACGH(500, 8, 4, 8)
     Appli(ag)

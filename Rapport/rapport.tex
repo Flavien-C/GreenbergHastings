@@ -70,7 +70,7 @@
     
     
     \section{Phénomènes d'émergences sur un automate donné}
-        On utilise maintenant un modèle généraliste de Greenberg-Hastings. On utilise comme paramètres huit états possibles par cellules, un rayon de 3 cases, un seuil de 5 et une taille de 80$\times$80.
+        On utilise maintenant un modèle généraliste de Greenberg-Hastings. On utilise comme paramètres huit états possibles par cellules, un rayon de 3 cases, un seuil de 5 et une taille de 80$\times$80 cases.
         \begin{center}
             \begin{minipage}{.17\linewidth}
                 \includegraphics[scale=0.15]{img/part2/step1.png}
@@ -108,9 +108,47 @@
         On remarque que l'automate subit d'abord une phase d'évolution chaotique, puis se stabilise pour répéter le cycle d'évolution de la seconde ligne à l'infini.
     
     
-    \section{Proposition d'automates créant des phénomènes d'émergeances}
-        \textbf{En faisant varier les paramètres nbEtats, rayon, seuil et tail, proposer d'autres automates dont la dynamique présente également des phénomènes d'émergence.\\
-        \Huge{Faire des test\\
-        Afficher les images avec les parametres\\}}
-    
+    \section{Proposition d'automates créant des phénomènes d'émergences}
+        \subsection{Vers l'évolution de plusieurs cellules}
+            Cet automate a une taille de 500$\times$500 cases, huit états possibles, un rayon de quatre cases, et un seuil de huit.
+            \begin{center}
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/1/step1.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/1/step2.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/1/step3.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/1/step4.png}
+                \end{minipage}
+            \end{center}
+            Comme dans l'automate de la partie précédente, l'automate se stabilise pour répéter ensuite le même cycle d'évolution.
+        
+        
+        \subsection{Vers la mort de l'automate}
+            Cet automate a une taille de 80$\times$80 cases, dix états possibles, un rayon de quatre cases, et un seuil de huit.
+            \begin{center}
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/2/step1.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/2/step2.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/2/step3.png}
+                \end{minipage}
+                $\rightarrow$
+                \begin{minipage}{.17\linewidth}
+                    \includegraphics[scale=0.15]{img/part3/2/step4.png}
+                \end{minipage}
+            \end{center}
+            Cet automate va se stabiliser en ayant toutes ces cellules dans le même état. De ce fait, l'automate ne va plus évoluer.
 \end{document}
